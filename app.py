@@ -4,6 +4,7 @@ from flask import render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from flask_migrate import Migrate
+from flask import request, redirect
 
 
 
@@ -48,3 +49,43 @@ def map():
 @app.route('/')
 def frontend():
     return render_template('map.html')
+
+@app.route('/backend')
+def backend():
+    results = Results.query.all()
+    return render_template('backend.html', results=results)
+
+@app.route('/update', methods = ['POST'])
+def update():
+    form = request.form
+
+    form_results = {}
+
+    for entry in form:
+
+        entrystring = entry.split("-")
+
+        state = entrystring[1]
+        color = entrystring[0]
+        vote = request.form[entry]
+
+        if state not in form_results:
+            form_results[state] = {}
+
+        form_results[state][color] = vote
+
+        update_row = Results.query.filter_by(state_abbr=state).first()
+
+        if color == "red":
+            update_row.red = int(vote)
+
+        if color == "blue":
+            update_row.blue = int(vote)
+
+        print(color + " " + state + " " + vote)
+
+        db.session.commit()
+
+
+
+    return form_results
