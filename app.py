@@ -2,6 +2,7 @@ import pathlib
 from flask import Flask
 from flask import render_template
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import func
 from flask_migrate import Migrate
 
 
@@ -36,8 +37,13 @@ def map():
     for x in results:
         results_dict[x.state_abbr] = {"state_name":x.state_name, "total_ecv":x.total_ecv, "red":x.red, "blue":x.blue}
 
-    print(results_dict)
-    return render_template('map.svg', result=results_dict)
+    total_red = (Results.query.with_entities(func.sum(Results.red)).all())[0][0]
+    total_blue = Results.query.with_entities(func.sum(Results.blue)).all()[0][0]
+
+    total_red = "{0:0=3d}".format(total_red)
+    total_blue = "{0:0=3d}".format(total_blue)
+
+    return render_template('map.svg', result=results_dict, total_red=total_red, total_blue=total_blue)
 
 @app.route('/')
 def frontend():
