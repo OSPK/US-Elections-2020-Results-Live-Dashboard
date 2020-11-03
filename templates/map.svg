@@ -976,7 +976,7 @@
          id="tspan202"
          x="189.93961"
          y="115.19833"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:Oswald;stroke-width:0.696648">Trump</tspan></text>
+         style="fill:#de0100;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:Oswald;stroke-width:0.696648">Trump</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:27.866px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.696648"
@@ -986,7 +986,7 @@
          id="tspan206"
          x="673.22211"
          y="115.19833"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:Oswald;stroke-width:0.696648">Biden</tspan></text>
+         style="fill:#1405bd;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:Oswald;stroke-width:0.696648">Biden</tspan></text>
   </g>
   <g
      id="tooltip"
