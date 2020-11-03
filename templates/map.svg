@@ -36,6 +36,9 @@
   #tooltip {
     font-family: Oswald;
   }
+  #tooltip tspan {
+      font-size: 1.3rem;
+  }
   .tooltip-trigger:hover {
     opacity: 0.8;
   }
@@ -1008,7 +1011,7 @@
          class="redline"
          fill="#e63946"
          x="8"
-         dy="1.2em"
+         dy="1.3em"
          id="tspan187">.</tspan><tspan
          class="blueline"
          fill="#023e8a"
@@ -1051,9 +1054,11 @@
 
 
           var length = statenameText.getComputedTextLength();
+          var length2 = redText.getComputedTextLength();
+
           console.log(length);
           for (var i = 0; i < tooltipRects.length; i++) {
-            tooltipRects[i].setAttributeNS(null, "width", length + 35);
+            tooltipRects[i].setAttributeNS(null, "width", length + length2);
           }
         }
 
