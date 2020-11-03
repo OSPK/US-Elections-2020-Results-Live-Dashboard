@@ -83,12 +83,24 @@ def update():
         update_row = Results.query.filter_by(state_abbr=state).first()
 
         if color == "red":
-            update_row.red_votes = int(vote)
+            update_row.red_votes = float(vote)
 
         if color == "blue":
-            update_row.blue_votes = int(vote)
+            update_row.blue_votes = float(vote)
 
         print(color + " " + state + " " + vote)
+
+        db.session.commit()
+
+        update_ecv = Results.query.filter_by(state_abbr=state).first()
+
+        if update_ecv.red_votes > update_ecv.blue_votes:
+            update_ecv.red = update_ecv.total_ecv
+            update_ecv.blue = 0
+
+        if update_ecv.red_votes < update_ecv.blue_votes:
+            update_ecv.blue = update_ecv.total_ecv
+            update_ecv.red = 0
 
         db.session.commit()
 
