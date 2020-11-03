@@ -920,7 +920,7 @@
          y="40.52919"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Oswald;-inkscape-font-specification:Oswald;stroke-width:0.900203">US Presidential Elections 2020</tspan></text>
     <rect
-       style="fill:#ccc;fill-opacity:0.901961;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.900203;stroke-opacity:0.338393"
+       style="fill:#666;fill-opacity:0.901961;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.900203;stroke-opacity:0.338393"
        id="bg_bar"
        width="538"
        height="36.31945"
@@ -936,10 +936,10 @@
     <rect
        style="fill:#111;fill-opacity:0.901961;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.900203;stroke-opacity:0.338393"
        id="midpoint"
-       width="1"
-       height="36.31945"
-       x="459.80769"
-       y="52.339817" />
+       width="1.80769"
+       height="37"
+       x="459"
+       y="51.999542" />
     <rect
        style="fill:#de0100;fill-opacity:0.901961;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.900203;stroke-opacity:0.338393"
        id="trump_bar"
@@ -956,7 +956,7 @@
          id="tspan180"
          x="200.80769"
          y="83.606987"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif';fill:#000;stroke-width:0.900203">{{total_red}}</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif';fill:#fff;stroke-width:0.900203">{{total_red}}</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:36.0081px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0ffffff;fill-opacity:1;stroke:none;stroke-width:0.900203"
@@ -966,7 +966,7 @@
          id="tspan184"
          x="658.57275"
          y="83.606987"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif';fill:#000;stroke-width:0.900203">{{total_blue}}</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif';fill:#fff;stroke-width:0.900203">{{total_blue}}</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:27.866px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.696648"

@@ -92,15 +92,23 @@ def update():
 
         db.session.commit()
 
-        update_ecv = Results.query.filter_by(state_abbr=state).first()
+    update_ecv = Results.query.all()
 
-        if update_ecv.red_votes > update_ecv.blue_votes:
-            update_ecv.red = update_ecv.total_ecv
-            update_ecv.blue = 0
+    for up_state in update_ecv:
 
-        if update_ecv.red_votes < update_ecv.blue_votes:
-            update_ecv.blue = update_ecv.total_ecv
-            update_ecv.red = 0
+        if up_state.red_votes > up_state.blue_votes:
+            up_state.red = up_state.total_ecv
+            up_state.blue = 0
+
+        if up_state.red_votes < up_state.blue_votes:
+            up_state.blue = up_state.total_ecv
+            up_state.red = 0
+
+        if up_state.red_votes == up_state.blue_votes:
+            up_state.blue = 0
+            up_state.red = 0
+
+        print("done"+up_state.state_abbr)
 
         db.session.commit()
 
