@@ -50,7 +50,11 @@ def map():
 def frontend():
     return render_template('map.html')
 
-@app.route('/backend')
+@app.route('/test')
+def test():
+    return render_template('test.html')
+
+@app.route('/backendx2020')
 def backend():
     results = Results.query.all()
     return render_template('backend.html', results=results)
