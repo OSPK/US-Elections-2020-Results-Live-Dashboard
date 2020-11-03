@@ -1,52 +1,52 @@
-id,state_name,state_abbr,total_ecv,red,blue
-0,Alabama,AL,9,0,0
-1,Alaska,AK,3,0,0
-2,Arizona,AZ,11,0,0
-3,Arkansas,AR,6,0,0
-4,California,CA,55,0,0
-5,Colorado,CO,9,0,0
-6,Connecticut,CT,7,0,0
-7,Delaware,DE,3,0,0
-8,District of Columbia,DC,3,0,0
-9,Florida,FL,29,0,0
-10,Georgia,GA,16,0,0
-11,Hawaii,HI,4,0,0
-12,Idaho,ID,4,0,0
-13,Illinois,IL,20,0,0
-14,Indiana,IN,11,0,0
-15,Iowa,IA,6,0,0
-16,Kansas,KS,6,0,0
-17,Kentucky,KY,8,0,0
-18,Louisiana,LA,8,0,0
-19,Maine,ME,4,0,0
-20,Maryland,MD,10,0,0
-21,Massachusetts,MA,11,0,0
-22,Michigan,MI,16,0,0
-23,Minnesota,MN,10,0,0
-24,Mississippi,MS,6,0,0
-25,Missouri,MO,10,0,0
-26,Montana,MT,3,0,0
-27,Nebraska,NE,5,0,0
-28,Nevada,NV,6,0,0
-29,New Hampshire,NH,4,0,0
-30,New Jersey,NJ,14,0,0
-31,New Mexico,NM,5,0,0
-32,New York,NY,29,0,0
-33,North Carolina,NC,15,0,0
-34,North Dakota,ND,3,0,0
-35,Ohio,OH,18,0,0
-36,Oklahoma,OK,7,0,0
-37,Oregon,OR,7,0,0
-38,Pennsylvania,PA,20,0,0
-39,Rhode Island,RI,4,0,0
-40,South Carolina,SC,9,0,0
-41,South Dakota,SD,3,0,0
-42,Tennessee,TN,11,0,0
-43,Texas,TX,38,0,0
-44,Utah,UT,6,0,0
-45,Vermont,VT,3,0,0
-46,Virginia,VA,13,0,0
-47,Washington,WA,12,0,0
-48,West Virginia,WV,5,0,0
-49,Wisconsin,WI,10,0,0
-50,Wyoming,WY,3,0,0
+id,state_name,state_abbr,total_ecv,red,blue,red_votes,blue_votes
+0,Alabama,AL,9,0,0,0,0
+1,Alaska,AK,3,0,0,0,0
+2,Arizona,AZ,11,0,0,0,0
+3,Arkansas,AR,6,0,0,0,0
+4,California,CA,55,0,0,0,0
+5,Colorado,CO,9,0,0,0,0
+6,Connecticut,CT,7,0,0,0,0
+7,Delaware,DE,3,0,0,0,0
+8,District of Columbia,DC,3,0,0,0,0
+9,Florida,FL,29,0,0,0,0
+10,Georgia,GA,16,0,0,0,0
+11,Hawaii,HI,4,0,0,0,0
+12,Idaho,ID,4,0,0,0,0
+13,Illinois,IL,20,0,0,0,0
+14,Indiana,IN,11,0,0,0,0
+15,Iowa,IA,6,0,0,0,0
+16,Kansas,KS,6,0,0,0,0
+17,Kentucky,KY,8,0,0,0,0
+18,Louisiana,LA,8,0,0,0,0
+19,Maine,ME,4,0,0,0,0
+20,Maryland,MD,10,0,0,0,0
+21,Massachusetts,MA,11,0,0,0,0
+22,Michigan,MI,16,0,0,0,0
+23,Minnesota,MN,10,0,0,0,0
+24,Mississippi,MS,6,0,0,0,0
+25,Missouri,MO,10,0,0,0,0
+26,Montana,MT,3,0,0,0,0
+27,Nebraska,NE,5,0,0,0,0
+28,Nevada,NV,6,0,0,0,0
+29,New Hampshire,NH,4,0,0,0,0
+30,New Jersey,NJ,14,0,0,0,0
+31,New Mexico,NM,5,0,0,0,0
+32,New York,NY,29,0,0,0,0
+33,North Carolina,NC,15,0,0,0,0
+34,North Dakota,ND,3,0,0,0,0
+35,Ohio,OH,18,0,0,0,0
+36,Oklahoma,OK,7,0,0,0,0
+37,Oregon,OR,7,0,0,0,0
+38,Pennsylvania,PA,20,0,0,0,0
+39,Rhode Island,RI,4,0,0,0,0
+40,South Carolina,SC,9,0,0,0,0
+41,South Dakota,SD,3,0,0,0,0
+42,Tennessee,TN,11,0,0,0,0
+43,Texas,TX,38,0,0,0,0
+44,Utah,UT,6,0,0,0,0
+45,Vermont,VT,3,0,0,0,0
+46,Virginia,VA,13,0,0,0,0
+47,Washington,WA,12,0,0,0,0
+48,West Virginia,WV,5,0,0,0,0
+49,Wisconsin,WI,10,0,0,0,0
+50,Wyoming,WY,3,0,0,0,0

@@ -25,6 +25,8 @@ class Results(db.Model):
     total_ecv = db.Column(db.Integer, nullable=False)
     red = db.Column(db.Integer)
     blue = db.Column(db.Integer)
+    red_votes = db.Column(db.Float, nullable=False, default=0)
+    blue_votes = db.Column(db.Float, nullable=False, default=0)
 
     def __repr__(self):
         return '<State %r>' % self.state_name
@@ -36,9 +38,9 @@ def map():
     results = Results.query.all()
     results_dict = {}
     for x in results:
-        results_dict[x.state_abbr] = {"state_name":x.state_name, "total_ecv":x.total_ecv, "red":x.red, "blue":x.blue}
+        results_dict[x.state_abbr] = {"state_name":x.state_name, "total_ecv":x.total_ecv, "red_votes":x.red_votes, "blue_votes":x.blue_votes}
 
-    total_red = (Results.query.with_entities(func.sum(Results.red)).all())[0][0]
+    total_red = Results.query.with_entities(func.sum(Results.red)).all()[0][0]
     total_blue = Results.query.with_entities(func.sum(Results.blue)).all()[0][0]
 
     total_red = "{0:0=3d}".format(total_red)
@@ -81,10 +83,10 @@ def update():
         update_row = Results.query.filter_by(state_abbr=state).first()
 
         if color == "red":
-            update_row.red = int(vote)
+            update_row.red_votes = int(vote)
 
         if color == "blue":
-            update_row.blue = int(vote)
+            update_row.blue_votes = int(vote)
 
         print(color + " " + state + " " + vote)
 
