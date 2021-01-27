@@ -14,7 +14,7 @@
 
 <body>
     <div class="container mt-4" style="margin-bottom: 4rem;">
-        <form id="updateform" action="/update" class="my-4" method="post">
+        <form id="updateform" action="{{ config.APPLICATION_ROOT }}/update" class="my-4" method="post">
             {% for result in results %}
             <div class="mb-3">
                 <h4>{{result.state_abbr}}.{{result.state_name}} {{result.total_ecv}}</h4>

@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve myproject
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/elections2020
+Environment="PATH=/root/elections2020/env/bin"
+ExecStart=/root/elections2020/env/bin/gunicorn --workers 3 --bind 0.0.0.0:8081 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
